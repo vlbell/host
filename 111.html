@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+</!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+div{
+	border: 3px pink solid;
+}
+@media (max-width: 500px) {
+	.box{
+			display: grid;
+			grid-template-columns: 50% 50%;
+			grid-auto-rows: minmax(180px, auto);
+			grid-column-gap: 0px;
+		}
+	.box_2{
+			display: flex;
+		    background-color: #C71585;
+		    grid-column: 1/2;
+		    grid-row: 1/2;
+		    padding: 5px;
+		    justify-content: center;
+		    align-items: center;
+ 		 }
+ 	.box_3{
+ 			display: flex;
+		    background-color: pink;
+		    grid-column: 2/3;
+		    grid-row: 1/2;
+			padding: 5px;
+		    justify-content: center;
+		    align-items: center;
+ 		 }
+ 	.box_1{
+    	
+     		grid-column: 1/3;
+ 			grid-row: 2/4;
+
+		}
+	.box_5{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+    
+     		grid-column: 1/3;
+ 			grid-row: 4/5;
+		}
+	.box_6{
+			background-color: lime;
+		    grid-column: 2/3;
+		    grid-row: 5/6;
+
+		}
+	.box_7{
+			background-color: deeppink;
+		    grid-column: 2/3;
+		    grid-row: 6/7;
+
+		}
+	.box_4{
+
+		    grid-column: 1/2;
+		    grid-row: 5/7
+
+	}
+	.btton{
+  	text-decoration:none;
+	border-radius: 4px; 
+	font: Arial, Helvetica, sans-serif;
+	font-size:80%; 
+	font-weight:bold; 
+  	background: deeppink;
+  	margin: 2%;
+  }
+  img{
+	float: left;
+  	width: 15%;
+  	padding: 1%;
+
+  }
+  #cs{
+  	display: flex;
+  	justify-content: flex-end;
+  	  	border: none;
+  	margin-right:  2%;
+  }
+  #phs{
+  	width: 60%;
+  	height: 60%;
+  	margin-top:4%; 
+  }	
+  #hsds{
+  	display: flex;
+  	justify-content: center;
+  	  	border: none;
+  }
+  p{
+  	padding: 5px;
+  }
+			
+}
+@media (min-width: 500px) {
+.box{
+display: grid;
+grid-template-columns: 2fr repeat(2, 1fr);
+grid-auto-rows: minmax(180px, auto);
+grid-column-gap: 0px;
+}
+.box_1{
+
+     grid-column: 1/2;
+     grid-row: 1/5;
+}
+  .box_2{
+ 	display: flex;
+			justify-content: center;
+			align-items: center;
+    background-color: #C71585;
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+  }
+  .box_3{
+  	display: flex;
+			justify-content: center;
+			align-items: center;
+    background-color: pink;
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .box_4{
+    grid-column: 2/3;
+    grid-row: 3/5;
+
+  }
+  .box_5{
+    grid-column: 2/4;
+    grid-row: 2/3;
+  	display: flex;
+			justify-content: center;
+			align-items: center;
+  }
+  .box_6{
+    background-color: lime;
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .box_7{
+    background-color: DeepPink;
+    grid-column: 3/4;
+    grid-row: 4/5;
+  }
+  .btton{
+  	text-decoration:none;
+	border-radius: 4px; 
+	font: Arial, Helvetica, sans-serif;
+	font-size:100%; 
+	font-weight:bold; 
+  	background: deeppink;
+  }
+  img{
+	float: left;
+  	width: 20%;
+  	padding: 2%;
+
+  }
+  #cs{
+  	display: flex;
+  	justify-content: flex-end;
+  	border: none;
+  	margin-right:  2%;
+  }
+  h1{
+  	padding: 15px;
+  }
+  #phs{
+  	width: 70%;
+
+  }
+    #hsds{
+  	display: flex;
+  	justify-content: center;
+    	border: none;	
+  }
+	
+  p{
+  	padding: 5px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+	<div class="box">
+		<div class="box_1"><h1 align="center">Zagolovok 1</h1><br><img src="https://vignette.wikia.nocookie.net/thesimssocial/images/a/a1/Logic.png/revision/latest?cb=20120805050951">
+		<p>Lorem ipsum — классическая панграмма, условный, зачастую бессмысленный текст-заполнитель, вставляемый в макет страницы. Является искажённым отрывком из философского трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н. э. на латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку[1]. Распространился в 1970-х годах из-за трафаретов компании Letraset, a затем — из-за того, что служил семплом в программе PageMaker. Испорченный текст, вероятно, происходит от его издания в Loeb Classical Library 1914 года, в котором слово dolorem разбито переносом так, что страница 36 начинается с lorem ipsum… (do- осталось на предыдущей)</p>
+		<div id="cs"><button class="btton">Read more>>></button></div></div>
+		<div class="box_2"><h2>Головна</h2></div>
+		<div class="box_3"><h2>Новини</h2></div>
+		<div class="box_4"><div id="hsds"><img id="phs"src="https://vignette.wikia.nocookie.net/thesimssocial/images/a/a1/Logic.png/revision/latest?cb=20120805050951"></div></div>
+		<div class="box_5"><h2>Zagolovok 2</h2></div>
+		<div class="box_6"><p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.  </p></div>
+		<div class="box_7"><p> Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. </p></div>
+
+
+				
+	</div>
+</body>
+</html>
