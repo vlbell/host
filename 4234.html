@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<legend>ПІБ</legend><input id="ims" type="text" required ><p>
+	<legend>Дата народження <input type="date"></legend><p>
+	<legend>Cтать</legend>
+	<input type="radio" name="choise" checked>Ж
+	<input type="radio" name="choise" checked>Ч<p>
+	<legend>Фото</legend><input type="file"><p>
+	<input type="checkbox" checked>Комерційник
+	<legend>Оцінка з Математики</legend><input id="mat" type="number" value="" required ><p>
+	<legend>Оцінка з Мови</legend><input type="number" id="ukr" value="" required ><p>
+	<input type="button" value="Click me" onclick="someFunc()">
+	<input type="button" value="Click me2" onclick="someFunc2()">
+	<script type="text/javascript">
+		function someFunc(){
+			Win = window.open("about:blank","exemple",'width=600,height=400,top=20,left=200');
+			var elem = document.getElementById("ims").value;
+			Win.document.write("Ім`я"+elem+"<br>");
+			var k = parseInt(document.getElementById("mat").value)+parseInt(document.getElementById("ukr").value);
+			Win.document.write("Сума Оцінок "+k);
+		}
+		function someFunc2(){
+			Win.close();
+		}
+	</script>
+</body>
+</html>

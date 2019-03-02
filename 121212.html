@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1</title>
+</head>
+<body>
+	<script type="text/javascript">
+	function check() {
+		var i=0;
+		if(document.test.vopr0.value=="Індуктивність") i++;
+		if(document.test.vopr1.value=="Ньютон") i++;
+		if(document.test.vopr2[1].checked) i++;
+		if(document.test.vopr5[0].checked) i++;
+		if(!document.test.vopr3[2].checked && document.test. vopr3[0].checked && document.test.vopr3[1].checked) i++;
+		if(!document.test.vopr6[2].checked && document.test. vopr6[0].checked && document.test.vopr6[1].checked) i++;
+		if(document.test.vopr4.value=="1") i++;
+		if(document.test.vopr7.value=="1") i++;
+		if (i>6) {document.getElementById("oc").innerHTML="<font color='green'> Ваша оцінка "+i+"</font>"} else  {document.getElementById("oc").innerHTML="<font color='red'> Ваша оцінка "+i+"</font>"};
+
+
+		}
+	</script>
+	<form name="test">
+		<p>Що вимірюється у Генрі</p>
+		<input type="text" name="vopr0"></p>
+		<p>Хто відкрив закони тяжіння</p>
+		<input type="text" name="vopr1"></p>
+		<p>Прискорення знадується</p>
+		<input type="radio" name="vopr2">1 законі<br> 
+		<input type="radio" name="vopr2">2 законі<br> 
+		<input type="radio" name="vopr2">3 законі<br>
+		<p>Ім`я Фарадея</p>
+		<input type="radio" name="vopr5">Майкл<br> 
+		<input type="radio" name="vopr5">Йоган<br> 
+		<input type="radio" name="vopr5">Фрнс<br
+		<p>Які величини входять в закон Ома</p>
+		<input type="checkbox" name="vopr3">Сила струму<br>
+		 <input type="checkbox" name="vopr3">Опір<br>
+		 <input type="checkbox" name="vopr3">Сила Архімеда<br>
+		 <p>Правило лівою руки допомає визначити</p>
+		<input type="checkbox" name="vopr6">Напрям ліній магнітної індукції
+		 <input type="checkbox" name="vopr6">Напрям сили струму<br>
+		 <input type="checkbox" name="vopr6">Силу Ампера<br>
+		<p>Якщо промінь падає під кутом 30, то під яким відіб'ється</p>
+		<select name="vopr4"> 
+			<option value="1">30</option><p>
+			<option value="2">45</option><p>
+			<option value="3">60</option><p>
+		</select>
+		<p>Хто відкрив рентгенівські промені</p>
+		<select name="vopr7"> 
+			<option value="1">Рентген</option><p>
+			<option value="2">Фарадей</option><p>
+			<option value="3">Максвел</option><p>
+		</select><p>
+	
+
+		<input type="button" value="Перевірити" onclick="check()">
+			<span id="oc"></span><p>
+	</form>
+</body>
+</html>
